@@ -1,4 +1,5 @@
 import { Toolbar, Box, AppBar, Typography, IconButton, TextField} from "@mui/material";
+import {Link} from 'react-router-dom'
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
@@ -18,6 +19,8 @@ function Header() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             SPA React
           </Typography>
+          <Link to="/">Main</Link>
+          <Link to="/about">About</Link>
           <TextField id="outlined-basic" label="Outlined" variant="outlined" color="warning"/>
         </Toolbar>
       </AppBar>
