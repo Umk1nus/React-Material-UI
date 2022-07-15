@@ -4,7 +4,7 @@ import { Main } from './pages/Main';
 import { About } from './pages/About';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { NotFound } from './pages/NotFound';
-import { CardContent } from './pages/CardContent';
+import { Category } from './pages/Category';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Main/>}/>
             <Route path="/about" element={<About/>}/>
             <Route element={<NotFound/>}/>
-            <Route path="/main/:id" element={CardContent}/>
+            <Route path="/category/:name" element={<Category/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>

@@ -3,7 +3,7 @@ import {Card, CardActions, CardContent, CardMedia, Button, Typography } from '@m
 import {Link} from 'react-router-dom'
 
 function CardCategory(props) {
-  const {idCategory, strCategory, strCategoryDescription, strCategoryThumb} = props
+  const {strCategory, strCategoryDescription, strCategoryThumb} = props
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -21,7 +21,7 @@ function CardCategory(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small"><Link to={`/category/${idCategory}`}>Category watch</Link></Button>
+        <Button size="small"><Link to={`/category/${strCategory}`}>Category watch</Link></Button>
       </CardActions>
     </Card>
   );
