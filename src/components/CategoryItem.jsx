@@ -5,7 +5,7 @@ function CategoryItem(props) {
   const {strMeal, strMealThumb, idMeal} = props 
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 345 }}>
       <CardMedia
         component="img"
         height="140"

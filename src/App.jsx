@@ -5,6 +5,7 @@ import { About } from './pages/About';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { NotFound } from './pages/NotFound';
 import { Category } from './pages/Category';
+import { Meal } from './pages/Meal';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route element={<NotFound/>}/>
             <Route path="/category/:name" element={<Category/>}/>
+            <Route path="/meal/:id" element={<Meal/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>
